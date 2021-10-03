@@ -1,0 +1,97 @@
+454c159d834f6c94c4ffaa2466bbe8b2
+"use strict";
+
+/* istanbul ignore next */
+function cov_2owed49mmw() {
+  var path = "D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\core\\language\\language.constants.ts";
+  var hash = "038f6a8844a926b9ea2d18eff33ad10f4d17c8ef";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\core\\language\\language.constants.ts",
+    statementMap: {
+      "0": {
+        start: {
+          line: 2,
+          column: 0
+        },
+        end: {
+          line: 2,
+          column: 62
+        }
+      },
+      "1": {
+        start: {
+          line: 3,
+          column: 0
+        },
+        end: {
+          line: 3,
+          column: 27
+        }
+      },
+      "2": {
+        start: {
+          line: 8,
+          column: 0
+        },
+        end: {
+          line: 15,
+          column: 2
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0,
+      "1": 0,
+      "2": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: {
+      file: "D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\core\\language\\language.constants.ts",
+      mappings: ";;;AAAA;;;EAGE;AACW,QAAA,SAAS,GAAa;IACjC,IAAI;IACJ,IAAI;IACJ,IAAI;IACJ,IAAI;IACJ,OAAO;IACP,IAAI;CAEL,CAAC",
+      names: [],
+      sources: ["D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\core\\language\\language.constants.ts"],
+      sourcesContent: ["/*\n    Languages codes are ISO_639-1 codes, see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes\n    They are written in English to avoid character encoding issues (not a perfect solution)\n*/\nexport const LANGUAGES: string[] = [\n  'fr',\n  'nl',\n  'en',\n  'it',\n  'pt-pt',\n  'es',\n  // jhipster-needle-i18n-language-constant - JHipster will add/remove languages in this array\n];\n"],
+      version: 3
+    },
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "038f6a8844a926b9ea2d18eff33ad10f4d17c8ef"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2owed49mmw = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2owed49mmw();
+cov_2owed49mmw().s[0]++;
+Object.defineProperty(exports, "__esModule", {
+  value: true
+});
+
+/* istanbul ignore next */
+cov_2owed49mmw().s[1]++;
+exports.LANGUAGES = void 0;
+/*
+    Languages codes are ISO_639-1 codes, see http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes
+    They are written in English to avoid character encoding issues (not a perfect solution)
+*/
+
+/* istanbul ignore next */
+cov_2owed49mmw().s[2]++;
+exports.LANGUAGES = ['fr', 'nl', 'en', 'it', 'pt-pt', 'es'];
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIkQ6XFwxLlBST0dSQU1NQVRJT05cXEpISVBTVEVSXFxraXJhXFxzcmNcXG1haW5cXHdlYmFwcFxcYXBwXFxjb3JlXFxsYW5ndWFnZVxcbGFuZ3VhZ2UuY29uc3RhbnRzLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OztBQUFBOzs7QUFHRTs7OztBQUNXLE9BQUEsQ0FBQSxTQUFBLEdBQXNCLENBQ2pDLElBRGlDLEVBRWpDLElBRmlDLEVBR2pDLElBSGlDLEVBSWpDLElBSmlDLEVBS2pDLE9BTGlDLEVBTWpDLElBTmlDLENBQXRCIiwic291cmNlc0NvbnRlbnQiOlsiLypcbiAgICBMYW5ndWFnZXMgY29kZXMgYXJlIElTT182MzktMSBjb2Rlcywgc2VlIGh0dHA6Ly9lbi53aWtpcGVkaWEub3JnL3dpa2kvTGlzdF9vZl9JU09fNjM5LTFfY29kZXNcbiAgICBUaGV5IGFyZSB3cml0dGVuIGluIEVuZ2xpc2ggdG8gYXZvaWQgY2hhcmFjdGVyIGVuY29kaW5nIGlzc3VlcyAobm90IGEgcGVyZmVjdCBzb2x1dGlvbilcbiovXG5leHBvcnQgY29uc3QgTEFOR1VBR0VTOiBzdHJpbmdbXSA9IFtcbiAgJ2ZyJyxcbiAgJ25sJyxcbiAgJ2VuJyxcbiAgJ2l0JyxcbiAgJ3B0LXB0JyxcbiAgJ2VzJyxcbiAgLy8gamhpcHN0ZXItbmVlZGxlLWkxOG4tbGFuZ3VhZ2UtY29uc3RhbnQgLSBKSGlwc3RlciB3aWxsIGFkZC9yZW1vdmUgbGFuZ3VhZ2VzIGluIHRoaXMgYXJyYXlcbl07XG4iXX0=

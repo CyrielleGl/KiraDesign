@@ -1,0 +1,29 @@
+{
+  "kiraApp": {
+    "products": {
+      "home": {
+        "title": "Products",
+        "createLabel": "Crear nuevo Products",
+        "createOrEditLabel": "Crear o editar Products",
+        "notFound": "Ningún Products encontrado"
+      },
+      "created": "Un nuevo Products ha sido creado con el identificador {{ param }}",
+      "updated": "Un Products ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Products ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Products {{ id }}?"
+      },
+      "detail": {
+        "title": "Products"
+      },
+      "pdtName": "Pdt Name",
+      "pdtSubtitle": "Pdt Subtitle",
+      "pdtDescription": "Pdt Description",
+      "pdtMaterial": "Pdt Material",
+      "pdtPrice": "Pdt Price",
+      "pdtStock": "Pdt Stock",
+      "pdtOnSold": "Pdt On Sold",
+      "pdtCategory": "Pdt Category"
+    }
+  }
+}

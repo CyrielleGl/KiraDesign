@@ -1,0 +1,51 @@
+65d6ef5df76d97a8a5fc7f6e2a8a565e
+/* istanbul ignore next */
+function cov_1bp9e7m6ph() {
+  var path = "D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\admin\\user-management\\user-management-delete-dialog.component.html";
+  var hash = "ec5fa36262de263919a0b0a1768aad01a4535fb0";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\admin\\user-management\\user-management-delete-dialog.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 1110
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "ec5fa36262de263919a0b0a1768aad01a4535fb0"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_1bp9e7m6ph = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_1bp9e7m6ph();
+cov_1bp9e7m6ph().s[0]++;
+module.exports = "<form *ngIf=\"user\" name=\"deleteForm\" (ngSubmit)=\"confirmDelete(user?.login!)\">\n    <div class=\"modal-header\">\n        <h4 class=\"modal-title\" jhiTranslate=\"entity.delete.title\">Confirm delete operation</h4>\n\n        <button type=\"button\" class=\"close\" data-dismiss=\"modal\" aria-hidden=\"true\" (click)=\"cancel()\">&times;</button>\n    </div>\n\n    <div class=\"modal-body\">\n        <jhi-alert-error></jhi-alert-error>\n\n        <p jhiTranslate=\"userManagement.delete.question\" [translateValues]=\"{ login: user.login }\">Are you sure you want to delete this User?</p>\n    </div>\n\n    <div class=\"modal-footer\">\n        <button type=\"button\" class=\"btn btn-secondary\" data-dismiss=\"modal\" (click)=\"cancel()\">\n            <fa-icon icon=\"ban\"></fa-icon>&nbsp;<span jhiTranslate=\"entity.action.cancel\">Cancel</span>\n        </button>\n\n        <button type=\"submit\" class=\"btn btn-danger\">\n            <fa-icon icon=\"times\"></fa-icon>&nbsp;<span jhiTranslate=\"entity.action.delete\">Delete</span>\n        </button>\n    </div>\n</form>\n";

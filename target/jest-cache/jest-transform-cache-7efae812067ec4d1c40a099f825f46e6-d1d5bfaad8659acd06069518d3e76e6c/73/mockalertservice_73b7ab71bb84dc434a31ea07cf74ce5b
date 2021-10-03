@@ -1,0 +1,16 @@
+3c442b283a4f076dcaa34ef0a55d29d5
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.MockAlertService = void 0;
+const ng_jhipster_1 = require("ng-jhipster");
+const spyobject_1 = require("./spyobject");
+class MockAlertService extends spyobject_1.SpyObject {
+    constructor() {
+        super(ng_jhipster_1.JhiAlertService);
+    }
+    addAlert(alertOptions) {
+        return alertOptions;
+    }
+}
+exports.MockAlertService = MockAlertService;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJmaWxlIjoiRDpcXDEuUFJPR1JBTU1BVElPTlxcSkhJUFNURVJcXGtpcmFcXHNyY1xcdGVzdFxcamF2YXNjcmlwdFxcc3BlY1xcaGVscGVyc1xcbW9jay1hbGVydC5zZXJ2aWNlLnRzIiwibWFwcGluZ3MiOiI7OztBQUFBLDZDQUF3RDtBQUV4RCwyQ0FBd0M7QUFFeEMsTUFBYSxnQkFBaUIsU0FBUSxxQkFBUztJQUM3QztRQUNFLEtBQUssQ0FBQyw2QkFBZSxDQUFDLENBQUM7SUFDekIsQ0FBQztJQUVELFFBQVEsQ0FBQyxZQUFzQjtRQUM3QixPQUFPLFlBQVksQ0FBQztJQUN0QixDQUFDO0NBQ0Y7QUFSRCw0Q0FRQyIsIm5hbWVzIjpbXSwic291cmNlcyI6WyJEOlxcMS5QUk9HUkFNTUFUSU9OXFxKSElQU1RFUlxca2lyYVxcc3JjXFx0ZXN0XFxqYXZhc2NyaXB0XFxzcGVjXFxoZWxwZXJzXFxtb2NrLWFsZXJ0LnNlcnZpY2UudHMiXSwic291cmNlc0NvbnRlbnQiOlsiaW1wb3J0IHsgSmhpQWxlcnRTZXJ2aWNlLCBKaGlBbGVydCB9IGZyb20gJ25nLWpoaXBzdGVyJztcblxuaW1wb3J0IHsgU3B5T2JqZWN0IH0gZnJvbSAnLi9zcHlvYmplY3QnO1xuXG5leHBvcnQgY2xhc3MgTW9ja0FsZXJ0U2VydmljZSBleHRlbmRzIFNweU9iamVjdCB7XG4gIGNvbnN0cnVjdG9yKCkge1xuICAgIHN1cGVyKEpoaUFsZXJ0U2VydmljZSk7XG4gIH1cblxuICBhZGRBbGVydChhbGVydE9wdGlvbnM6IEpoaUFsZXJ0KTogSmhpQWxlcnQge1xuICAgIHJldHVybiBhbGVydE9wdGlvbnM7XG4gIH1cbn1cbiJdLCJ2ZXJzaW9uIjozfQ==

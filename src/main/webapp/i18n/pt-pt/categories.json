@@ -1,0 +1,25 @@
+{
+  "kiraApp": {
+    "categories": {
+      "home": {
+        "title": "Categories",
+        "createLabel": "Criar novo(a) Categories",
+        "createOrEditLabel": "Criar ou editar Categories",
+        "notFound": "Nenhum Categories encontrado"
+      },
+      "created": "Um novo Categories foi criado com o identificador {{ param }}",
+      "updated": "Categories com identificador {{ param }} foi actualizado",
+      "deleted": "Categories com identificador {{ param }} foi eliminado",
+      "delete": {
+        "question": "Tem a certeza que pretende eliminar o(a) Categories {{ id }}?"
+      },
+      "detail": {
+        "title": "Categories"
+      },
+      "catName": "Cat Name",
+      "catDescription": "Cat Description",
+      "catOrder": "Cat Order",
+      "catProducts": "Cat Products"
+    }
+  }
+}

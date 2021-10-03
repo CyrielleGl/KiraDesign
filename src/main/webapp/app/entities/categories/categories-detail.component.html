@@ -1,0 +1,38 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="categories">
+            <h2><span jhiTranslate="kiraApp.categories.detail.title">Categories</span> {{ categories.id }}</h2>
+
+            <hr>
+
+            <jhi-alert-error></jhi-alert-error>
+
+            <dl class="row-md jh-entity-details">
+                <dt><span jhiTranslate="kiraApp.categories.catName">Cat Name</span></dt>
+                <dd>
+                    <span>{{ categories.catName }}</span>
+                </dd>
+                <dt><span jhiTranslate="kiraApp.categories.catDescription">Cat Description</span></dt>
+                <dd>
+                    <span>{{ categories.catDescription }}</span>
+                </dd>
+                <dt><span jhiTranslate="kiraApp.categories.catOrder">Cat Order</span></dt>
+                <dd>
+                    <span>{{ categories.catOrder }}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon icon="arrow-left"></fa-icon>&nbsp;<span jhiTranslate="entity.action.back">Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/categories', categories.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon icon="pencil-alt"></fa-icon>&nbsp;<span jhiTranslate="entity.action.edit">Edit</span>
+            </button>
+        </div>
+    </div>
+</div>
