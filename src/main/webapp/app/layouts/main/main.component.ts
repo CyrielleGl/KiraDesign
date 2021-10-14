@@ -12,6 +12,9 @@ import { AccountService } from 'app/core/auth/account.service';
 export class MainComponent implements OnInit {
   private renderer: Renderer2;
 
+  yearNow = new Date().getFullYear().toString();
+  appTitle = 'Kira Design';
+
   constructor(
     private accountService: AccountService,
     private titleService: Title,

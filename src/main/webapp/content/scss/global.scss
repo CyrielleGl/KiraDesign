@@ -16,12 +16,13 @@ h4 {
 
 /* Increase contrast of links to get 100% on Lighthouse Accessability Audit. Override this color if you want to change the link color, or use a Bootswatch theme */
 a {
-  color: #533f03;
-  font-weight: bold;
+  color: var(--primary);
+  font-weight: normal;
+  text-decoration: none !important;
 }
 
 a:hover {
-  color: #533f03;
+  color: var(--secondary);
 }
 
 /* override hover color for dropdown-item forced by bootstrap to all a:not([href]):not([tabindex]) elements in _reboot.scss */
@@ -204,4 +205,228 @@ Logo styles
   vertical-align: middle;
   background: url('../images/logo-kira_design_black.png') no-repeat center center;
   background-size: contain;
+}
+
+/* ==========================================================================
+Textes styles
+========================================================================== */
+
+.main {
+  text-align: center;
+  width: 100%;
+  padding-top: 1.6rem;
+  padding-bottom: 2rem;
+  margin-right: auto;
+  margin-left: auto;
+  min-height: 25rem;
+}
+
+h2 {
+  font-size: 1.6rem;
+  font-weight: 400;
+  color: var(--primary);
+  padding-bottom: 1.6rem;
+  margin-bottom: 0rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  color: var(--primary);
+  padding-bottom: 1rem;
+  margin-bottom: 0rem;
+}
+
+h4 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: var(--primary);
+  padding-bottom: 1rem;
+  margin-bottom: 0rem;
+}
+
+h5 {
+  font-size: 1.5rem;
+  color: var(--primary);
+}
+
+h6 {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--primary);
+  padding-bottom: 1rem;
+  margin-bottom: 0rem;
+}
+
+.title-body {
+  border-bottom: solid 1px;
+  border-color: var(--primary);
+  margin-bottom: 2.2rem;
+}
+
+.inline-block i,
+.inline-block p {
+  display: inline-block;
+}
+
+.top-margin {
+  margin-top: 1rem;
+}
+
+.col-3 {
+  max-width: 100% !important;
+}
+
+.return-back {
+  color: var(--primary);
+  font-weight: normal;
+}
+
+.return-back:hover {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+/* ==========================================================================
+Heart styles
+========================================================================== */
+.heart-img {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../../content/images/little-heart.png') no-repeat center center;
+  background-size: contain;
+  margin-top: 2rem;
+}
+
+.little-heart-img {
+  height: 40px;
+  width: 40px;
+  display: inline-block;
+  vertical-align: middle;
+  background: url('../../content/images/little-heart.png') no-repeat center center;
+  background-size: contain;
+  margin-bottom: 1rem;
+}
+
+/* ==========================================================================
+Buttons styles
+========================================================================== */
+
+.btn {
+  padding: 15px 20px;
+  border: 0 none;
+  text-align: left;
+  color: #fff !important;
+  margin-right: auto;
+  margin-left: auto;
+  background-image: -webkit-linear-gradient(left, var(--primary), #ad2655);
+}
+
+.btn:hover {
+  background-image: -webkit-linear-gradient(left, #ad2655, var(--primary));
+}
+
+/* ==========================================================================
+Images with buttons
+========================================================================== */
+
+.img-wrapper {
+  position: relative;
+}
+
+.img-responsive {
+  width: 100%;
+  height: auto;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.img-overlay:before {
+  content: ' ';
+  display: block;
+  /* adjust 'height' to position overlay content vertically */
+  height: 40%;
+}
+
+.btn-responsive {
+  padding: 20px 25px;
+  font-size: 1.6rem;
+  line-height: 1.3333333;
+  border-radius: 6px;
+}
+
+/* ==========================================================================
+NGBTooltip
+========================================================================== */
+
+.tooltip-inner {
+  background-color: #ffffff;
+  color: var(--primary);
+  border: solid 0.2px;
+  border-color: var(--primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 0.68rem;
+}
+
+/* ==========================================================================
+Media Queries
+========================================================================== */
+
+/* mobile screens */
+@media screen and (max-width: 575px) {
+  .main {
+    padding-right: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .btn-responsive {
+    padding: 10px 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+  .img-overlay:before {
+    height: 32%;
+  }
+}
+
+/* tablet screens */
+@media screen and (min-width: 576px) and (max-width: 959px) {
+  .main {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+    padding-bottom: 3rem;
+  }
+  .btn-responsive {
+    padding: 10px 15px;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: 3px;
+  }
+}
+
+/* tablet landscape & desktop screens */
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+  .main {
+    padding-right: 4rem;
+    padding-left: 4rem;
+    padding-bottom: 4rem;
+  }
+}
+
+/* large screens */
+@media screen and (min-width: 1200px) {
+  .main {
+    max-width: 62rem;
+    padding-right: 5rem;
+    padding-left: 5rem;
+  }
 }

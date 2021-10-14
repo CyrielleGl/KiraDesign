@@ -1,3 +1,37 @@
-<div class="footer">
-    <p jhiTranslate="footer">This is your footer</p>
-</div>
+<footer class="footer">
+
+    <!-- link to Instagram -->
+
+    <div class="instagram" id="instagram-link" placement="bottom" ngbTooltip="Suivez-moi sur Instagram">
+        <fa-icon icon="instagram"></fa-icon>
+
+        <a href="https://www.instagram.com/kira_dsgn/" target="_blank">
+            <fa-icon [icon]="['fab', 'instagram']"></fa-icon>
+        </a>
+    </div>
+
+    <!-- nav footer -->
+
+    <div class="footer-nav">
+        <ul>
+            <li>
+                <a class="link" id="apropos-link" title="A propos" routerLink="infos/a-propos" routerLinkActive="active">A propos</a>
+            </li>
+            <li>
+                <a class="link" id="boutique-link" title="Boutique" target="_blank" href="https://www.etsy.com/fr/shop/KiraDsgn" routerLinkActive="active">Boutique</a>
+            </li>
+            <li>
+                <a class="link" id="contact-link" title="Contact" routerLink="infos/contact" routerLinkActive="active">Contact</a>
+            </li>
+        </ul>
+    </div>
+
+    <!-- copyright -->
+
+    <div class="copyright">
+        &copy;
+        <span [innerText]="yearNow"></span>&nbsp;<span [innerText]="appTitle"></span>&nbsp;
+        <span>-&nbsp; <a class="link" id="mentions-legales-link" title="Mentions légales" routerLink="infos/mentions-legales" routerLinkActive="active">Mentions légales</a></span>
+    </div>
+
+</footer>
