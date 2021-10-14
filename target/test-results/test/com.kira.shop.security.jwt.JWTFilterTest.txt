@@ -1,4 +1,0 @@
--------------------------------------------------------------------------------
-Test set: com.kira.shop.security.jwt.JWTFilterTest
--------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.179 s - in com.kira.shop.security.jwt.JWTFilterTest

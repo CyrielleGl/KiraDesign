@@ -1,1 +1,0 @@
-{"file":"D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\test\\javascript\\jest.ts","mappings":";;AAAA,+BAA6B;AAC7B,+BAA6B","names":[],"sources":["D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\test\\javascript\\jest.ts"],"sourcesContent":["import 'jest-preset-angular';\nimport './jest-global-mocks';\n"],"version":3}
