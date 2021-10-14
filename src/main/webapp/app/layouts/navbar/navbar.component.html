@@ -17,6 +17,14 @@
                 </a>
             </li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a class="nav-link" routerLink="infos/a-propos">
+                    <span>
+                        <fa-icon [icon]="['fab', 'pagelines']"></fa-icon>
+                        <span jhiTranslate="global.menu.a-propos">A propos</span>
+                    </span>
+                </a>
+            </li>
+            <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
                 <a class="nav-link" target="_blank" href="https://www.etsy.com/fr/shop/KiraDsgn">
                     <span>
                         <fa-icon icon="shopping-bag"></fa-icon>
@@ -25,7 +33,7 @@
                 </a>
             </li>
             <li class="nav-item" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
-                <a class="nav-link" routerLink="/">
+                <a class="nav-link" routerLink="shop/patterns">
                     <span>
                         <fa-icon icon="bookmark"></fa-icon>
                         <span jhiTranslate="global.menu.patrons">Patrons</span>

@@ -1,0 +1,91 @@
+/* Footer */
+
+.footer {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  background-color: var(--primary);
+  text-align: center;
+  border-top: #dddddd solid 0.06rem;
+  font-size: 0.8rem;
+  z-index: 6;
+  position: relative;
+}
+
+.footer_admin {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  width: 100%;
+  background-color: var(--primary);
+  text-align: left;
+  border-top: #dddddd solid 0.06rem;
+  font-size: 1rem;
+}
+
+/* link Instagram */
+
+.instagram {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+/* nav footer */
+
+.footer-nav {
+  display: block;
+  width: 100%;
+  margin-top: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: normal;
+}
+
+a:hover {
+  color: var(--secondary);
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  display: inline;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+a.active {
+  color: #ffffff;
+  border-bottom: 2px dotted var(--secondary);
+}
+
+.link {
+  color: #ffffff;
+}
+
+.link:hover {
+  color: var(--secondary);
+  text-decoration: none;
+}
+
+.link:active {
+  text-decoration: underline dotted #ffffff;
+}
+
+/* copyright */
+
+.copyright {
+  color: #ffffff;
+  font-weight: lighter;
+  text-align: center;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}

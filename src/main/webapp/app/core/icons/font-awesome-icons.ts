@@ -1,8 +1,10 @@
 import {
+  faAt,
   faUser,
   faSort,
   faSortUp,
   faSortDown,
+  faSpinner,
   faSync,
   faEye,
   faBan,
@@ -37,12 +39,17 @@ import {
   faHome,
   faBookmark,
 } from '@fortawesome/free-solid-svg-icons';
+import { faInstagram, faPagelines } from '@fortawesome/free-brands-svg-icons';
 
 export const fontAwesomeIcons = [
+  faAt,
+  faInstagram,
+  faPagelines,
   faUser,
   faSort,
   faSortUp,
   faSortDown,
+  faSpinner,
   faSync,
   faEye,
   faBan,
