@@ -1,0 +1,80 @@
+636e8aa7a0559f4b1e8a0331b794c621
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.KiraTestModule = void 0;
+const tslib_1 = require("tslib");
+const common_1 = require("@angular/common");
+const router_1 = require("@angular/router");
+const core_1 = require("@angular/core");
+const testing_1 = require("@angular/common/http/testing");
+const ng_bootstrap_1 = require("@ng-bootstrap/ng-bootstrap");
+const ngx_webstorage_1 = require("ngx-webstorage");
+const ng_jhipster_1 = require("ng-jhipster");
+const mock_language_service_1 = require("./helpers/mock-language.service");
+const account_service_1 = require("app/core/auth/account.service");
+const login_modal_service_1 = require("app/core/login/login-modal.service");
+const mock_login_modal_service_1 = require("./helpers/mock-login-modal.service");
+const mock_account_service_1 = require("./helpers/mock-account.service");
+const mock_route_service_1 = require("./helpers/mock-route.service");
+const mock_active_modal_service_1 = require("./helpers/mock-active-modal.service");
+const mock_alert_service_1 = require("./helpers/mock-alert.service");
+const mock_event_manager_service_1 = require("./helpers/mock-event-manager.service");
+let KiraTestModule = class KiraTestModule {
+};
+KiraTestModule = tslib_1.__decorate([
+    core_1.NgModule({
+        providers: [
+            common_1.DatePipe,
+            ng_jhipster_1.JhiDataUtils,
+            ng_jhipster_1.JhiDateUtils,
+            ng_jhipster_1.JhiParseLinks,
+            {
+                provide: ng_jhipster_1.JhiLanguageService,
+                useClass: mock_language_service_1.MockLanguageService,
+            },
+            {
+                provide: ng_jhipster_1.JhiEventManager,
+                useClass: mock_event_manager_service_1.MockEventManager,
+            },
+            {
+                provide: ng_bootstrap_1.NgbActiveModal,
+                useClass: mock_active_modal_service_1.MockActiveModal,
+            },
+            {
+                provide: router_1.ActivatedRoute,
+                useValue: new mock_route_service_1.MockActivatedRoute({ id: 123 }),
+            },
+            {
+                provide: router_1.Router,
+                useClass: mock_route_service_1.MockRouter,
+            },
+            {
+                provide: account_service_1.AccountService,
+                useClass: mock_account_service_1.MockAccountService,
+            },
+            {
+                provide: login_modal_service_1.LoginModalService,
+                useClass: mock_login_modal_service_1.MockLoginModalService,
+            },
+            {
+                provide: ng_jhipster_1.JhiAlertService,
+                useClass: mock_alert_service_1.MockAlertService,
+            },
+            {
+                provide: ng_bootstrap_1.NgbModal,
+                useValue: null,
+            },
+            {
+                provide: ngx_webstorage_1.SessionStorageService,
+                useValue: null,
+            },
+            {
+                provide: ngx_webstorage_1.LocalStorageService,
+                useValue: null,
+            },
+        ],
+        imports: [testing_1.HttpClientTestingModule],
+    })
+], KiraTestModule);
+exports.KiraTestModule = KiraTestModule;
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJmaWxlIjoiRDpcXDEuUFJPR1JBTU1BVElPTlxcSkhJUFNURVJcXGtpcmFcXHNyY1xcdGVzdFxcamF2YXNjcmlwdFxcc3BlY1xcdGVzdC5tb2R1bGUudHMiLCJtYXBwaW5ncyI6Ijs7OztBQUFBLDRDQUEyQztBQUMzQyw0Q0FBeUQ7QUFDekQsd0NBQXlDO0FBQ3pDLDBEQUF1RTtBQUN2RSw2REFBc0U7QUFDdEUsbURBQTRFO0FBQzVFLDZDQUE4SDtBQUU5SCwyRUFBc0U7QUFDdEUsbUVBQStEO0FBQy9ELDRFQUF1RTtBQUN2RSxpRkFBMkU7QUFDM0UseUVBQW9FO0FBQ3BFLHFFQUE4RTtBQUM5RSxtRkFBc0U7QUFDdEUscUVBQWdFO0FBQ2hFLHFGQUF3RTtBQXVEeEUsSUFBYSxjQUFjLEdBQTNCLE1BQWEsY0FBYztDQUFHLENBQUE7QUFBakIsY0FBYztJQXJEMUIsZUFBUSxDQUFDO1FBQ1IsU0FBUyxFQUFFO1lBQ1QsaUJBQVE7WUFDUiwwQkFBWTtZQUNaLDBCQUFZO1lBQ1osMkJBQWE7WUFDYjtnQkFDRSxPQUFPLEVBQUUsZ0NBQWtCO2dCQUMzQixRQUFRLEVBQUUsMkNBQW1CO2FBQzlCO1lBQ0Q7Z0JBQ0UsT0FBTyxFQUFFLDZCQUFlO2dCQUN4QixRQUFRLEVBQUUsNkNBQWdCO2FBQzNCO1lBQ0Q7Z0JBQ0UsT0FBTyxFQUFFLDZCQUFjO2dCQUN2QixRQUFRLEVBQUUsMkNBQWU7YUFDMUI7WUFDRDtnQkFDRSxPQUFPLEVBQUUsdUJBQWM7Z0JBQ3ZCLFFBQVEsRUFBRSxJQUFJLHVDQUFrQixDQUFDLEVBQUUsRUFBRSxFQUFFLEdBQUcsRUFBRSxDQUFDO2FBQzlDO1lBQ0Q7Z0JBQ0UsT0FBTyxFQUFFLGVBQU07Z0JBQ2YsUUFBUSxFQUFFLCtCQUFVO2FBQ3JCO1lBQ0Q7Z0JBQ0UsT0FBTyxFQUFFLGdDQUFjO2dCQUN2QixRQUFRLEVBQUUseUNBQWtCO2FBQzdCO1lBQ0Q7Z0JBQ0UsT0FBTyxFQUFFLHVDQUFpQjtnQkFDMUIsUUFBUSxFQUFFLGdEQUFxQjthQUNoQztZQUNEO2dCQUNFLE9BQU8sRUFBRSw2QkFBZTtnQkFDeEIsUUFBUSxFQUFFLHFDQUFnQjthQUMzQjtZQUNEO2dCQUNFLE9BQU8sRUFBRSx1QkFBUTtnQkFDakIsUUFBUSxFQUFFLElBQUk7YUFDZjtZQUNEO2dCQUNFLE9BQU8sRUFBRSxzQ0FBcUI7Z0JBQzlCLFFBQVEsRUFBRSxJQUFJO2FBQ2Y7WUFDRDtnQkFDRSxPQUFPLEVBQUUsb0NBQW1CO2dCQUM1QixRQUFRLEVBQUUsSUFBSTthQUNmO1NBQ0Y7UUFDRCxPQUFPLEVBQUUsQ0FBQyxpQ0FBdUIsQ0FBQztLQUNuQyxDQUFDO0dBQ1csY0FBYyxDQUFHO0FBQWpCLHdDQUFjIiwibmFtZXMiOltdLCJzb3VyY2VzIjpbIkQ6XFwxLlBST0dSQU1NQVRJT05cXEpISVBTVEVSXFxraXJhXFxzcmNcXHRlc3RcXGphdmFzY3JpcHRcXHNwZWNcXHRlc3QubW9kdWxlLnRzIl0sInNvdXJjZXNDb250ZW50IjpbImltcG9ydCB7IERhdGVQaXBlIH0gZnJvbSAnQGFuZ3VsYXIvY29tbW9uJztcbmltcG9ydCB7IEFjdGl2YXRlZFJvdXRlLCBSb3V0ZXIgfSBmcm9tICdAYW5ndWxhci9yb3V0ZXInO1xuaW1wb3J0IHsgTmdNb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcbmltcG9ydCB7IEh0dHBDbGllbnRUZXN0aW5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29tbW9uL2h0dHAvdGVzdGluZyc7XG5pbXBvcnQgeyBOZ2JBY3RpdmVNb2RhbCwgTmdiTW9kYWwgfSBmcm9tICdAbmctYm9vdHN0cmFwL25nLWJvb3RzdHJhcCc7XG5pbXBvcnQgeyBTZXNzaW9uU3RvcmFnZVNlcnZpY2UsIExvY2FsU3RvcmFnZVNlcnZpY2UgfSBmcm9tICduZ3gtd2Vic3RvcmFnZSc7XG5pbXBvcnQgeyBKaGlMYW5ndWFnZVNlcnZpY2UsIEpoaURhdGFVdGlscywgSmhpRGF0ZVV0aWxzLCBKaGlFdmVudE1hbmFnZXIsIEpoaUFsZXJ0U2VydmljZSwgSmhpUGFyc2VMaW5rcyB9IGZyb20gJ25nLWpoaXBzdGVyJztcblxuaW1wb3J0IHsgTW9ja0xhbmd1YWdlU2VydmljZSB9IGZyb20gJy4vaGVscGVycy9tb2NrLWxhbmd1YWdlLnNlcnZpY2UnO1xuaW1wb3J0IHsgQWNjb3VudFNlcnZpY2UgfSBmcm9tICdhcHAvY29yZS9hdXRoL2FjY291bnQuc2VydmljZSc7XG5pbXBvcnQgeyBMb2dpbk1vZGFsU2VydmljZSB9IGZyb20gJ2FwcC9jb3JlL2xvZ2luL2xvZ2luLW1vZGFsLnNlcnZpY2UnO1xuaW1wb3J0IHsgTW9ja0xvZ2luTW9kYWxTZXJ2aWNlIH0gZnJvbSAnLi9oZWxwZXJzL21vY2stbG9naW4tbW9kYWwuc2VydmljZSc7XG5pbXBvcnQgeyBNb2NrQWNjb3VudFNlcnZpY2UgfSBmcm9tICcuL2hlbHBlcnMvbW9jay1hY2NvdW50LnNlcnZpY2UnO1xuaW1wb3J0IHsgTW9ja0FjdGl2YXRlZFJvdXRlLCBNb2NrUm91dGVyIH0gZnJvbSAnLi9oZWxwZXJzL21vY2stcm91dGUuc2VydmljZSc7XG5pbXBvcnQgeyBNb2NrQWN0aXZlTW9kYWwgfSBmcm9tICcuL2hlbHBlcnMvbW9jay1hY3RpdmUtbW9kYWwuc2VydmljZSc7XG5pbXBvcnQgeyBNb2NrQWxlcnRTZXJ2aWNlIH0gZnJvbSAnLi9oZWxwZXJzL21vY2stYWxlcnQuc2VydmljZSc7XG5pbXBvcnQgeyBNb2NrRXZlbnRNYW5hZ2VyIH0gZnJvbSAnLi9oZWxwZXJzL21vY2stZXZlbnQtbWFuYWdlci5zZXJ2aWNlJztcblxuQE5nTW9kdWxlKHtcbiAgcHJvdmlkZXJzOiBbXG4gICAgRGF0ZVBpcGUsXG4gICAgSmhpRGF0YVV0aWxzLFxuICAgIEpoaURhdGVVdGlscyxcbiAgICBKaGlQYXJzZUxpbmtzLFxuICAgIHtcbiAgICAgIHByb3ZpZGU6IEpoaUxhbmd1YWdlU2VydmljZSxcbiAgICAgIHVzZUNsYXNzOiBNb2NrTGFuZ3VhZ2VTZXJ2aWNlLFxuICAgIH0sXG4gICAge1xuICAgICAgcHJvdmlkZTogSmhpRXZlbnRNYW5hZ2VyLFxuICAgICAgdXNlQ2xhc3M6IE1vY2tFdmVudE1hbmFnZXIsXG4gICAgfSxcbiAgICB7XG4gICAgICBwcm92aWRlOiBOZ2JBY3RpdmVNb2RhbCxcbiAgICAgIHVzZUNsYXNzOiBNb2NrQWN0aXZlTW9kYWwsXG4gICAgfSxcbiAgICB7XG4gICAgICBwcm92aWRlOiBBY3RpdmF0ZWRSb3V0ZSxcbiAgICAgIHVzZVZhbHVlOiBuZXcgTW9ja0FjdGl2YXRlZFJvdXRlKHsgaWQ6IDEyMyB9KSxcbiAgICB9LFxuICAgIHtcbiAgICAgIHByb3ZpZGU6IFJvdXRlcixcbiAgICAgIHVzZUNsYXNzOiBNb2NrUm91dGVyLFxuICAgIH0sXG4gICAge1xuICAgICAgcHJvdmlkZTogQWNjb3VudFNlcnZpY2UsXG4gICAgICB1c2VDbGFzczogTW9ja0FjY291bnRTZXJ2aWNlLFxuICAgIH0sXG4gICAge1xuICAgICAgcHJvdmlkZTogTG9naW5Nb2RhbFNlcnZpY2UsXG4gICAgICB1c2VDbGFzczogTW9ja0xvZ2luTW9kYWxTZXJ2aWNlLFxuICAgIH0sXG4gICAge1xuICAgICAgcHJvdmlkZTogSmhpQWxlcnRTZXJ2aWNlLFxuICAgICAgdXNlQ2xhc3M6IE1vY2tBbGVydFNlcnZpY2UsXG4gICAgfSxcbiAgICB7XG4gICAgICBwcm92aWRlOiBOZ2JNb2RhbCxcbiAgICAgIHVzZVZhbHVlOiBudWxsLFxuICAgIH0sXG4gICAge1xuICAgICAgcHJvdmlkZTogU2Vzc2lvblN0b3JhZ2VTZXJ2aWNlLFxuICAgICAgdXNlVmFsdWU6IG51bGwsXG4gICAgfSxcbiAgICB7XG4gICAgICBwcm92aWRlOiBMb2NhbFN0b3JhZ2VTZXJ2aWNlLFxuICAgICAgdXNlVmFsdWU6IG51bGwsXG4gICAgfSxcbiAgXSxcbiAgaW1wb3J0czogW0h0dHBDbGllbnRUZXN0aW5nTW9kdWxlXSxcbn0pXG5leHBvcnQgY2xhc3MgS2lyYVRlc3RNb2R1bGUge31cbiJdLCJ2ZXJzaW9uIjozfQ==

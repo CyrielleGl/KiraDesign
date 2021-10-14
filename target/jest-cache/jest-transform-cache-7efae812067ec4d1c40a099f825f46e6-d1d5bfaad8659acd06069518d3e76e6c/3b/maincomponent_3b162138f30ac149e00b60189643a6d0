@@ -1,0 +1,51 @@
+9ff8bd7915af5cafa0ddec0f70ed46c8
+/* istanbul ignore next */
+function cov_2gecqqxoqg() {
+  var path = "D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\layouts\\main\\main.component.html";
+  var hash = "cf575ed7aa36e189360ff171c65889950d4d3dff";
+  var global = new Function("return this")();
+  var gcv = "__coverage__";
+  var coverageData = {
+    path: "D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\layouts\\main\\main.component.html",
+    statementMap: {
+      "0": {
+        start: {
+          line: 1,
+          column: 0
+        },
+        end: {
+          line: 1,
+          column: 287
+        }
+      }
+    },
+    fnMap: {},
+    branchMap: {},
+    s: {
+      "0": 0
+    },
+    f: {},
+    b: {},
+    inputSourceMap: null,
+    _coverageSchema: "1a1c01bbd47fc00a2c39e90264f33305004495a9",
+    hash: "cf575ed7aa36e189360ff171c65889950d4d3dff"
+  };
+  var coverage = global[gcv] || (global[gcv] = {});
+
+  if (!coverage[path] || coverage[path].hash !== hash) {
+    coverage[path] = coverageData;
+  }
+
+  var actualCoverage = coverage[path];
+  {
+    // @ts-ignore
+    cov_2gecqqxoqg = function () {
+      return actualCoverage;
+    };
+  }
+  return actualCoverage;
+}
+
+cov_2gecqqxoqg();
+cov_2gecqqxoqg().s[0]++;
+module.exports = "<jhi-page-ribbon></jhi-page-ribbon>\n\n<div>\n    <router-outlet name=\"navbar\"></router-outlet>\n</div>\n\n<div class=\"container-fluid\">\n    <div class=\"card jh-card\">\n        <router-outlet></router-outlet>\n    </div>\n\n    <jhi-footer></jhi-footer>\n</div>\n";

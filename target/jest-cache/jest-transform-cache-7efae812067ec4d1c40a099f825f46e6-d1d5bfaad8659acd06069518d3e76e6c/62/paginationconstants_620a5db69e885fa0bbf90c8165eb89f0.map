@@ -1,0 +1,1 @@
+{"version":3,"sources":["D:\\1.PROGRAMMATION\\JHIPSTER\\kira\\src\\main\\webapp\\app\\shared\\constants\\pagination.constants.ts"],"names":[],"mappings":";;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;AAAa,OAAA,CAAA,cAAA,GAAiB,EAAjB","sourcesContent":["export const ITEMS_PER_PAGE = 20;\n"]}
