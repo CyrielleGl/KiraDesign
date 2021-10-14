@@ -1,4 +1,0 @@
-# Created at 2021-02-14T16:58:02.973
-Boot Manifest-JAR contains absolute paths in classpath 'D:\1.PROGRAMMATION\JHIPSTER\kira\target\test-classes'
-Hint: <argLine>-Djdk.net.URLClassPath.disableClassPathURLCheck=true</argLine>
-
