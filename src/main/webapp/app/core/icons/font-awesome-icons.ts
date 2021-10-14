@@ -29,11 +29,13 @@ import {
   faSignInAlt,
   faCalendarAlt,
   faSearch,
+  faShoppingBag,
   faTrashAlt,
   faAsterisk,
   faTasks,
   // jhipster-needle-add-icon-import
   faHome,
+  faBookmark,
 } from '@fortawesome/free-solid-svg-icons';
 
 export const fontAwesomeIcons = [
@@ -50,6 +52,7 @@ export const fontAwesomeIcons = [
   faPlus,
   faPencilAlt,
   faBars,
+  faBookmark,
   faHome,
   faThList,
   faUserPlus,
@@ -69,6 +72,7 @@ export const fontAwesomeIcons = [
   faSignInAlt,
   faCalendarAlt,
   faSearch,
+  faShoppingBag,
   faTrashAlt,
   // jhipster-needle-add-icon-import
   faAsterisk,
