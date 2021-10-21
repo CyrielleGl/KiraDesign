@@ -3,10 +3,44 @@
         <h2>PATRONS</h2>
     </div>
 
-    <div>
-        <fa-icon icon="spinner" style="font-size: 4rem; color: var(--primary); margin-top: 1rem"></fa-icon>
-        <p style="color: var(--primary); margin-top: 2rem">Bientôt disponible !</p>
+    <div></div>
+    <div class="mb-5 justify-content-center">
+        <p>Cliquez sur chaque image pour afficher les détails !</p>
     </div>
+
+
+    <!-- <div class="input-group mb-5 justify-content-center">
+        <div class="form-outline">
+            <input type="search" class="form-control" #searchItem (keyup)="onSearchItems(searchItem.value)" />
+        </div>
+        <button type="button" class="btn btn-primary">
+            <i class="fas fa-search"></i>
+        </button>
+    </div> -->
+
+    <div class="row row-cols-1 row-cols-md-3">
+        <div class="col mb-4 sm-12">
+            <div class="img-overlay" id="jules-box" style="width: 18rem; height: 18rem;">
+                <img class="image img-thumbnail" src="../../../content/images/patterns/patron-jules.jpg"
+                     alt="image pattern"/>
+                <div class="img-caption">
+                    <div class="link" style="padding-top: 2rem;">
+                        <h5 class="title" id="jules">Jules</h5>
+                        <span class="collection">Echarpe d'automne pour homme</span>
+                        <br>
+                        <span class="price">Gratuit</span>
+                        <br><br>
+                        <div class="item-details-link" id="pdf-download-link">
+                            <a (click)="downloadPdf()"><span>Télécharger le pdf&nbsp;<fa-icon icon="file-download"></fa-icon></span>
+                            </a>
+                        </div>
+                        <br>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </div>
 
 <br>

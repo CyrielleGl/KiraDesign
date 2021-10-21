@@ -38,11 +38,13 @@ import {
   // jhipster-needle-add-icon-import
   faHome,
   faBookmark,
+  faFileDownload,
 } from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faPagelines } from '@fortawesome/free-brands-svg-icons';
 
 export const fontAwesomeIcons = [
   faAt,
+  faFileDownload,
   faInstagram,
   faPagelines,
   faUser,

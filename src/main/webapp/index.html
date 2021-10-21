@@ -11,6 +11,21 @@
     <link rel="icon" href="favicon.ico" />
     <link rel="manifest" href="manifest.webapp" />
     <link rel="stylesheet" href="content/css/loading.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function(event) {
+            var hash = window.decodeURI(location.hash.replace('#', ''))
+            if (hash !== '') {
+                var element = document.getElementById(hash)
+                if (element) {
+                    var offset = element.offsetTop
+                    // Wait for the browser to finish rendering before scrolling.
+                    setTimeout((function() {
+                        window.scrollTo(0, offset - 100)
+                    }), 0)
+                }
+            }
+        })
+    </script>
     <!-- jhipster-needle-add-resources-to-root - JHipster will add new resources here -->
 </head>
 <body>
@@ -20,7 +35,7 @@
     <jhi-main>
         <div class="app-loading">
             <div class="lds-css ng-scope">
-                <div class="lds-pacman">
+                <div class="lds-roller">
                     <div><div></div><div></div><div></div></div>
                     <div><div></div><div></div><div></div></div>
                 </div>
