@@ -7,9 +7,18 @@
         <p class="lead" jhiTranslate="home.subtitle" class="text-primary text-center">Pour l'amour du fait-main</p>
 
         <div class="img-wrapper">
-            <img class="img-responsive" src="../../content/images/banniere-shop.jpg" alt="Echarpe automne et pomme de pain">
+            <img class="img-responsive" src="../../content/images/banners/banner-shop.jpg" alt="Bandeau laine rose multicolore">
             <div class="img-overlay">
                 <a target="_blank" href="https://www.etsy.com/fr/shop/KiraDsgn" class="btn btn-responsive">BOUTIQUE</a>
+            </div>
+        </div>
+
+        <hr/>
+
+        <div class="img-wrapper">
+            <img class="img-responsive" src="../../content/images/banners/banner-patterns.jpg" alt="Echarpe automne et pomme de pain">
+            <div class="img-overlay" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }">
+                <a routerLink="shop/patterns" class="btn btn-responsive">PATRONS</a>
             </div>
         </div>
 

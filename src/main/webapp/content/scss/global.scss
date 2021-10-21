@@ -296,7 +296,6 @@ Heart styles
   vertical-align: middle;
   background: url('../../content/images/little-heart.png') no-repeat center center;
   background-size: contain;
-  margin-top: 2rem;
 }
 
 .little-heart-img {
@@ -306,7 +305,7 @@ Heart styles
   vertical-align: middle;
   background: url('../../content/images/little-heart.png') no-repeat center center;
   background-size: contain;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 
 /* ==========================================================================
@@ -333,6 +332,8 @@ Images with buttons
 
 .img-wrapper {
   position: relative;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .img-responsive {
