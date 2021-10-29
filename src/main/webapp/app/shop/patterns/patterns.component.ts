@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as FileSaver from 'file-saver';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'jhi-patterns',
@@ -7,9 +8,16 @@ import * as FileSaver from 'file-saver';
   styleUrls: ['./patterns.component.scss'],
 })
 export class PatternsComponent implements OnInit {
-  constructor() {}
+  patterns: any;
 
-  ngOnInit(): void {}
+  constructor(private httpClient: HttpClient) {}
+
+  ngOnInit(): void {
+    this.httpClient.get<any>('content/data/patterns.json').subscribe((data: any) => {
+      this.patterns = data.patterns;
+      console.warn(this.patterns);
+    });
+  }
 
   downloadPdf(): void {
     const pdfUrl = './content/patterns/kd-pattern-jules.pdf';

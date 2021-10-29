@@ -1,0 +1,18 @@
+{
+  "patterns": [
+    {
+      "title": "Jules",
+      "description": "Echarpe d'automne pour homme",
+      "price": "Gratuit",
+      "linkImage": "./content/images/patterns/patron-jules.jpg",
+      "linkPdf": "./content/patterns/kd-pattern-jules.pdf"
+    },
+    {
+      "title": "Dénia",
+      "description": "Plateau vide-poche",
+      "price": "Gratuit",
+      "linkImage": "./content/images/patterns/patron-denia.jpg",
+      "linkPdf": "./content/patterns/kd-pattern-denia.pdf"
+    }
+  ]
+}
