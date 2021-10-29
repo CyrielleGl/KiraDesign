@@ -15,16 +15,13 @@ export class PatternsComponent implements OnInit {
   ngOnInit(): void {
     this.httpClient.get<any>('content/data/patterns.json').subscribe((data: any) => {
       this.patterns = data.patterns;
+      console.warn(this.patterns);
     });
   }
 
-  downloadPdf(): void {
-    let pdfUrl = '';
-    let pdfName = '';
-    this.patterns.map((pattern: any) => {
-      pdfUrl = pattern.linkPdf;
-      pdfName = pattern.pdfName;
-    });
+  downloadPdf(pattern: any): void {
+    const pdfUrl = pattern.linkPdf;
+    const pdfName = pattern.pdfName;
     FileSaver.saveAs(pdfUrl, pdfName);
   }
 }
