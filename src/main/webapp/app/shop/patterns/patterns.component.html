@@ -19,16 +19,16 @@
     </div> -->
 
     <div class="row row-cols-1 row-cols-md-3">
-        <div class="col mb-4 sm-12">
-            <div class="img-overlay" id="jules-box" style="width: 18rem; height: 18rem;">
-                <img class="image img-thumbnail" src="../../../content/images/patterns/patron-jules.jpg"
+        <div class="col mb-4 sm-12" *ngFor="let pattern of patterns">
+            <div class="img-overlay" id="{{pattern.title}}-box" style="width: 18rem; height: 18rem;">
+                <img class="image img-thumbnail" src="{{pattern.linkImage}}"
                      alt="image pattern"/>
                 <div class="img-caption">
                     <div class="link" style="padding-top: 2rem;">
-                        <h5 class="title" id="jules">Jules</h5>
-                        <span class="collection">Echarpe d'automne pour homme</span>
+                        <h5 class="title" id="{{pattern.title}}">{{pattern.title}}</h5>
+                        <span class="collection">{{pattern.description}}</span>
                         <br>
-                        <span class="price">Gratuit</span>
+                        <span class="price">{{pattern.price}}</span>
                         <br><br>
                         <div class="item-details-link" id="pdf-download-link">
                             <a (click)="downloadPdf()"><span>Télécharger le pdf&nbsp;<fa-icon icon="file-download"></fa-icon></span>
